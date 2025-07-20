@@ -121,6 +121,18 @@ python main.py
 | finally 2020 is almost over... so i can never hear "2020 has been a bad year" ever again. | Low Risk    | Low Risk       |
 
 ---
+### Confusion Matrix
+
+[Confusion Matrix](CONFUSION_MATRIX.png)
+
+### Class Distribution
+
+[Class Distribution](Class_distribution.png)
+
+### Actual V/s Predicted
+
+[Actual V/s Predicted](Actual_Predicted.png)
+
 
 📌 Note
 This project is for educational purposes only.
