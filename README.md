@@ -69,6 +69,59 @@ pip install -r requirements.txt
 Run the script
 python main.py
 
+## Model Evaluation
+
+### Sample Data Examples
+
+| Text Sample                                                                                | Class       |
+|--------------------------------------------------------------------------------------------|-------------|
+| Ex Wife Threatening SuicideRecently I left my ...                                          | suicide     |
+| Am I weird I don't get affected by compliments...                                         | non-suicide |
+| Finally 2020 is almost over... So I can never ...                                         | non-suicide |
+| i need helpjust help me im crying so hard                                                 | suicide     |
+| I’m so lostHello, my name is Adam (16) and I...                                          | suicide     |
+
+---
+
+### Performance Metrics
+
+- **Accuracy:** 88%
+
+#### Classification Report
+
+| Class       | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+| Non-Suicide | 0.84      | 0.96   | 0.90     | 27      |
+| Suicide     | 0.94      | 0.76   | 0.84     | 21      |
+| **Accuracy**|           |        | **0.88** | 48      |
+| Macro Avg   | 0.89      | 0.86   | 0.87     | 48      |
+| Weighted Avg| 0.88      | 0.88   | 0.87     | 48      |
+
+---
+
+### Test Examples and Predictions
+
+| Text                                                              | Predicted Risk |
+|-------------------------------------------------------------------|----------------|
+| I feel so hopeless and can't see a way out.                       | Low Risk       |
+| Life is beautiful, I am happy and excited for the future.        | Low Risk       |
+| Nobody cares about me, I'm all alone.                             | Low Risk       |
+| I'm just having a bad day, things will get better.                | Low Risk       |
+
+---
+
+### Sample Actual vs Predicted
+
+| Text                                                                                      | Actual Risk | Predicted Risk |
+|-------------------------------------------------------------------------------------------|-------------|----------------|
+| fuck the verizon smart family app i can’t even watch porn privately anymore wtf why...    | Low Risk    | Low Risk       |
+| well, im screwed. i locked myself in the school toilet, and can't get out. for now...     | High Risk   | Low Risk       |
+| i am ending my life today, goodbye everyone...                                            | High Risk   | High Risk      |
+| guys i want friends that’s it, i’m alone and don’t talk to anyone...                      | Low Risk    | Low Risk       |
+| finally 2020 is almost over... so i can never hear "2020 has been a bad year" ever again. | Low Risk    | Low Risk       |
+
+---
+
 📌 Note
 This project is for educational purposes only.
 If you're experiencing suicidal thoughts, please seek professional help immediately.
